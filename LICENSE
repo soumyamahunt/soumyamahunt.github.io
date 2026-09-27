@@ -1,24 +1,24 @@
-This is free and unencumbered software released into the public domain.
+Copyright (c) 2026 Soumya Ranjan Mahunt. All rights reserved.
 
-Anyone is free to copy, modify, publish, use, compile, sell, or
-distribute this software, either in source code form or as a compiled
-binary, for any purpose, commercial or non-commercial, and by any
-means.
+This repository and the website published from it, including all source code,
+markup, styles, scripts, text, images, design and personal information
+(together, the "Work"), are the exclusive property of Soumya Ranjan Mahunt.
 
-In jurisdictions that recognize copyright laws, the author or authors
-of this software dedicate any and all copyright interest in the
-software to the public domain. We make this dedication for the benefit
-of the public at large and to the detriment of our heirs and
-successors. We intend this dedication to be an overt act of
-relinquishment in perpetuity of all present and future rights to this
-software under copyright law.
+No license or right is granted to use the Work in any way. Without prior
+written permission from the copyright holder, you may not copy, reproduce,
+modify, adapt, translate, create derivative works from, distribute, publish,
+republish, display, sell, sublicense, mirror or otherwise use the Work or any
+part of it, in any form or by any means, for any purpose, commercial or
+non-commercial. This includes use of the Work, or any part of it, to train,
+fine-tune or evaluate machine-learning or artificial-intelligence models.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
-IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
-OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
-ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
-OTHER DEALINGS IN THE SOFTWARE.
+Viewing the website in a web browser for personal, non-commercial reference is
+permitted. Any rights that cannot be restricted under applicable law, or under
+the terms of service of the platform hosting this repository, remain
+unaffected.
 
-For more information, please refer to <https://unlicense.org>
+To request permission, contact soumya.mahunt@gmail.com.
+
+THE WORK IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED.
+IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR
+OTHER LIABILITY ARISING FROM, OUT OF OR IN CONNECTION WITH THE WORK.
