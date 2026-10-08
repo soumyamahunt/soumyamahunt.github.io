@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy - Skein</title>
+  <meta name="description" content="How the Skein BitTorrent client for iPhone and iPad handles your data.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="canonical" href="https://soumyamahunt.com/skein/privacy/">
+  <link rel="icon" type="image/png" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <style>
+    :root {
+      --bg: #f6f6f8;
+      --surface: #ffffff;
+      --text: #1c1c1e;
+      --muted: #5b5b61;
+      --border: #e4e4e7;
+      --accent: #0c7399;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111113;
+        --surface: #1b1b1f;
+        --text: #ececef;
+        --muted: #a1a1a8;
+        --border: #2c2c31;
+        --accent: #5ac7e6;
+      }
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 16px 64px;
+    }
+
+    article {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 32px 28px;
+    }
+
+    .app {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin: 0 0 24px;
+    }
+
+    .app img {
+      width: 72px;
+      height: 72px;
+      flex: none;
+      /* iOS-style rounded square */
+      border-radius: 22.5%;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+    }
+
+    .app .meta { margin: 0; }
+
+    h1 { font-size: 30px; line-height: 1.2; margin: 0 0 4px; }
+    h2 { font-size: 21px; margin: 32px 0 8px; }
+    p, li { margin: 8px 0; }
+    ul { padding-left: 22px; }
+    a { color: var(--accent); text-underline-offset: 2px; }
+    .meta { color: var(--muted); margin: 0 0 24px; }
+    .summary {
+      border-left: 4px solid var(--accent);
+      padding: 4px 16px;
+      margin: 24px 0;
+      color: var(--text);
+    }
+    footer { color: var(--muted); text-align: center; font-size: 15px; margin-top: 24px; }
+
+    @media (max-width: 520px) {
+      article { padding: 24px 18px; }
+      h1 { font-size: 26px; }
+      .app img { width: 60px; height: 60px; }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <article>
+      <header class="app">
+        <img src="../icon.png" alt="Skein app icon" width="72" height="72">
+        <div>
+          <h1>Privacy Policy</h1>
+          <p class="meta">Skein for iPhone and iPad · Effective 8 October 2026</p>
+        </div>
+      </header>
+
+      <p>Skein is a BitTorrent client made by Soumya Ranjan Mahunt ("I", "me"). This policy explains what data the
+        app uses, why, and the choices you have. I don't run any servers for Skein and I don't collect any data about
+        you: the app has no account, no analytics, no crash reporting and no ads.</p>
+
+      <div class="summary">
+        <p><strong>In short:</strong> nothing is sent to me. Your torrents, downloads, feeds and settings stay on your
+          device. The one thing to know is how BitTorrent itself works: while you download or share a torrent, the
+          trackers and peers in that torrent can see your IP address.</p>
+      </div>
+
+      <h2>Data stored on your device</h2>
+      <p>Skein keeps the following on your device only, and deletes it when you delete the app:</p>
+      <ul>
+        <li>the torrents you add, their progress and resume data;</li>
+        <li>the files you download, which you can also see and manage in the Files app under <em>Skein</em>;</li>
+        <li>your RSS feed subscriptions, download rules, and which feed items were already added;</li>
+        <li>your settings, including the download folder you chose.</li>
+      </ul>
+      <p>When you share a .torrent file to Skein from another app, the share extension places it in storage shared
+        only with the Skein app, which reads it and removes it.</p>
+
+      <h2>BitTorrent and your IP address</h2>
+      <p>BitTorrent works by connecting you directly to other people. When you download or share a torrent:</p>
+      <ul>
+        <li><strong>Trackers</strong> named by the torrent, and the <strong>DHT</strong> network, learn your IP
+          address and that you are taking part in that torrent, so other peers can find you.</li>
+        <li><strong>Peers</strong> you connect to see your IP address, which pieces you have, and the app's name and
+          version (Skein identifies itself as a BitTorrent client, as all clients do).</li>
+      </ul>
+      <p>These are third parties chosen by whoever made the torrent, not by me, and I have no control over or access
+        to what they record. Skein offers ways to limit this under <em>⋯ › Settings</em>: a SOCKS or HTTP proxy, protocol encryption
+        (which hides the traffic's content from your network provider, not your IP address from peers), IP blocklists,
+        and switching off DHT, peer exchange and local discovery.</p>
+
+      <h2>Local network</h2>
+      <p>With your permission (iOS asks for Local Network access), Skein uses your local network to find peers on the
+        same network (Local Service Discovery) and to ask your router to forward a port (UPnP and NAT-PMP) so peers
+        can reach you. You can turn these off under <em>⋯ › Settings › Peer discovery</em> or deny access in Settings › Privacy &amp; Security ›
+        Local Network.</p>
+
+      <h2>RSS feeds</h2>
+      <p>If you subscribe to a feed, Skein fetches it directly from the address you entered, and downloads .torrent
+        files it links to. Those websites see your IP address and the request, as with any web request; their own
+        privacy policies apply.</p>
+
+      <h2>Streaming</h2>
+      <p>When you play a file while it downloads, Skein serves it to the built-in player through a server that only
+        accepts connections from your own device. Nothing is streamed to anyone else.</p>
+
+      <h2>Notifications</h2>
+      <p>If you allow notifications, Skein shows them on your device when a download finishes. They are created on
+        the device and are not sent through any server.</p>
+
+      <h2>Analytics and tracking</h2>
+      <p>Skein contains no analytics, advertising or crash-reporting code, and does not track you across other
+        companies' apps or websites.</p>
+
+      <h2>Distribution</h2>
+      <p>Skein is installed through AltStore PAL. AltStore and Apple handle the install and updates under their own
+        privacy policies: <a href="https://altstore.io" rel="noopener noreferrer">AltStore</a> and the
+        <a href="https://www.apple.com/legal/privacy/" rel="noopener noreferrer">Apple Privacy Policy</a>.</p>
+
+      <h2>Children</h2>
+      <p>Skein is not directed at children. I don't knowingly collect personal data from anyone, including
+        children.</p>
+
+      <h2>Your rights</h2>
+      <p>Depending on where you live (for example under the GDPR in Europe), you may have rights to access, delete,
+        or object to the use of your personal data. Because I don't hold any data about you, there is nothing for me
+        to access or delete; data on your device is removed by deleting the app. For data held by trackers, peers or
+        feed websites, contact them directly. If you need help, contact me.</p>
+
+      <h2>Changes to this policy</h2>
+      <p>If Skein's data use changes, I'll update this page and the effective date above, and note significant
+        changes in the release notes.</p>
+
+      <h2>Contact</h2>
+      <p>Questions about privacy? Email <a href="mailto:support@soumyamahunt.com">support@soumyamahunt.com</a>.</p>
+    </article>
+    <footer><a href="/">soumyamahunt.com</a></footer>
+  </main>
+</body>
+
+</html>
