@@ -1,0 +1,13 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["DT86RXWSKH.com.soumyamahunt.shopeasy"],
+        "components": [{ "/": "/shopeasy/oauth/*", "comment": "Sign-in callbacks for stores ShopEasy connects to" }]
+      }
+    ]
+  },
+  "webcredentials": {
+    "apps": ["DT86RXWSKH.com.soumyamahunt.shopeasy"]
+  }
+}
