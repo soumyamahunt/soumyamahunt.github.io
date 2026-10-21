@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hush Privacy Policy</title>
+  <meta name="description" content="How the Hush ad blocker for iOS handles your data.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="canonical" href="https://soumyamahunt.com/hush/privacy/">
+  <link rel="icon" type="image/png" href="../icon.png">
+  <link rel="apple-touch-icon" href="../icon.png">
+  <style>
+    :root {
+      --bg: #f6f6f8;
+      --surface: #ffffff;
+      --text: #1c1c1e;
+      --muted: #5b5b61;
+      --border: #e4e4e7;
+      --accent: #2e47c7;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111113;
+        --surface: #1b1b1f;
+        --text: #ececef;
+        --muted: #a1a1a8;
+        --border: #2c2c31;
+        --accent: #8fa8ff;
+      }
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 16px 64px;
+    }
+
+    article {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 32px 28px;
+    }
+
+    .app {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin: 0 0 24px;
+    }
+
+    .app img {
+      width: 72px;
+      height: 72px;
+      flex: none;
+      /* iOS-style rounded square */
+      border-radius: 22.5%;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+    }
+
+    .app .meta { margin: 0; }
+
+    h1 { font-size: 30px; line-height: 1.2; margin: 0 0 4px; }
+    h2 { font-size: 21px; margin: 32px 0 8px; }
+    p, li { margin: 8px 0; }
+    ul { padding-left: 22px; }
+    a { color: var(--accent); text-underline-offset: 2px; }
+    .meta { color: var(--muted); margin: 0 0 24px; }
+    .summary {
+      border-left: 4px solid var(--accent);
+      padding: 4px 16px;
+      margin: 24px 0;
+      color: var(--text);
+    }
+    footer { color: var(--muted); text-align: center; font-size: 15px; margin-top: 24px; }
+
+    @media (max-width: 520px) {
+      article { padding: 24px 18px; }
+      h1 { font-size: 26px; }
+      .app img { width: 60px; height: 60px; }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <article>
+      <header class="app">
+        <img src="../icon.png" alt="Hush app icon" width="72" height="72">
+        <div>
+          <h1>Privacy Policy</h1>
+          <p class="meta">Hush for iPhone and iPad · Effective 21 October 2026</p>
+        </div>
+      </header>
+
+      <p>Hush is an ad and tracker blocker made by Soumya Ranjan Mahunt ("I", "me"). This policy explains what data
+        the app uses, where it goes, and the choices you have. Hush can block in three ways: Safari blocking, VPN
+        mode and Hush Everywhere. Each handles your browsing differently, so each is described below.</p>
+
+      <div class="summary">
+        <p><strong>In short:</strong> no account or sign-up, no analytics, no ads and no tracking. I don't collect
+          any personal data, and I can't see which sites or apps you use. Safari blocking and VPN mode decide
+          everything on your device. VPN mode sends lookups it doesn't block to Cloudflare's public DNS resolver, or
+          to your own VPN provider if you add one. Hush Everywhere asks my filtering service about some addresses,
+          but in an encrypted form the service can't read, so it never learns which address was asked about.</p>
+      </div>
+
+      <h2>Data stored on your device</h2>
+      <p>Hush keeps the following on your device only, in storage shared between the app and its extensions:</p>
+      <ul>
+        <li>the hosts you add to your own blocklist;</li>
+        <li>your settings, such as which Safari blockers are paused, whether to block when unsure, and how often
+          the blocklist is refreshed;</li>
+        <li>for VPN mode, the WireGuard configuration you import from your VPN provider (including its keys), saved
+          in your device's VPN settings, and running counts of lookups checked and blocked;</li>
+        <li>a short log of the filter extension's own status (such as when it loaded the blocklist), used to show
+          errors in the app; and</li>
+        <li>for Hush Everywhere, a cache of recent answers that iOS keeps itself.</li>
+      </ul>
+      <p>None of this is sent to me. It is deleted when you delete the app, and you can remove your own hosts, your
+        VPN configuration or Hush Everywhere from inside the app at any time.</p>
+
+      <h2>Safari blocking</h2>
+      <p>Hush's Safari extensions give Safari a list of rules, and Safari applies them itself. The extensions are
+        never told which pages you visit, and nothing about your browsing reaches Hush or me.</p>
+
+      <h2>VPN mode</h2>
+      <p>VPN mode uses a VPN configuration on your device to check each DNS lookup (the step where an app turns a
+        name like <em>example.com</em> into an address). Lookups for ads and trackers are answered on your device
+        and never leave it. Hush doesn't log the names you look up.</p>
+      <ul>
+        <li><strong>On its own</strong>, only lookups pass through Hush. The ones it doesn't block are forwarded to
+          Cloudflare's public DNS resolver (1.1.1.1). These lookups are not encrypted, so Cloudflare, and networks
+          along the way, can see the names looked up and your IP address. Cloudflare handles them under its
+          <a href="https://developers.cloudflare.com/1.1.1.1/privacy/public-dns-resolver/" rel="noopener noreferrer">resolver
+          privacy policy</a>. All your other traffic goes out as usual, not through Hush.</li>
+        <li><strong>With your own VPN provider</strong>, Hush connects to the provider you chose using the
+          configuration you imported, and your traffic and lookups it doesn't block go to that provider, under its
+          own privacy policy. If that configuration names no DNS server, Hush uses Cloudflare's, through your
+          VPN.</li>
+      </ul>
+      <p>No server of mine is involved in VPN mode.</p>
+
+      <h2>Hush Everywhere</h2>
+      <p>Hush Everywhere uses iOS's built-in URL filter. iOS itself does the checking; the Hush app and its
+        extension never see the addresses your apps request.</p>
+      <ul>
+        <li><strong>Most requests never leave your device.</strong> Hush gives iOS a compact summary of the
+          blocklist, and iOS rules out almost every address against it without asking anything.</li>
+        <li><strong>The rest are asked about privately.</strong> When the summary can't rule an address out, iOS
+          asks my filtering service at service.soumyamahunt.com using Private Information Retrieval: the question
+          is encrypted so that the service can answer whether the address is blocked without learning which
+          address was asked about.</li>
+        <li><strong>The service doesn't know who is asking.</strong> In App Store and TestFlight builds, iOS sends
+          these questions through Apple's Oblivious HTTP relay, so the service sees the relay rather than your IP
+          address, and Apple's relay can't read the questions. Requests carry anonymous Privacy Pass tokens and an
+          access token that is the same for every copy of Hush, so the service can't tell users apart or link
+          questions to you.</li>
+        <li><strong>When you switch Hush Everywhere on</strong>, the app sends one request to service.soumyamahunt.com
+          to check that it can be reached. Like any web request it carries your IP address, but nothing about your
+          browsing.</li>
+      </ul>
+      <p>The filtering service runs on a server I operate on Oracle Cloud, with Cloudflare in front of it as a
+        network proxy. Cloudflare and Oracle process this traffic under their own privacy policies. The service
+        keeps no record of the addresses asked about, since it never learns them. Its operational logs record when
+        requests arrive and which part of the service they used, so I can keep it running, and do not identify
+        you.</p>
+
+      <h2>Subscription (Hush Everywhere)</h2>
+      <p>The subscription is sold and billed by Apple. I never see your payment details or Apple Account. The app
+        uses Apple's StoreKit on your device to check whether you're subscribed, using the transaction information
+        Apple provides. You can manage or cancel it in your device's subscription settings.</p>
+
+      <h2>Blocklist updates</h2>
+      <p>The blocklists ship inside the app and are updated with new versions of it. Hush doesn't download
+        blocklists from me or anyone else.</p>
+
+      <h2>Analytics and tracking</h2>
+      <p>Hush contains no analytics, crash reporting, advertising or other third-party services. It does not track
+        you across other companies' apps or websites. If you choose to share diagnostics with app developers in iOS
+        settings, Apple may share crash reports with me under the
+        <a href="https://www.apple.com/legal/privacy/" rel="noopener noreferrer">Apple Privacy Policy</a>.</p>
+
+      <h2>Children</h2>
+      <p>Hush is a general-audience app and is not directed at children under 13. I don't knowingly collect personal
+        data from anyone, including children.</p>
+
+      <h2>Your rights</h2>
+      <p>Depending on where you live (for example under the GDPR in Europe or privacy laws in some US states), you
+        may have rights to access, delete, or object to the use of your personal data. Because I don't hold personal
+        data about you, most of these are covered by deleting the app. For data handled by Apple, Cloudflare or your
+        VPN provider, use their controls, or contact me and I'll point you to the right place.</p>
+
+      <h2>Changes to this policy</h2>
+      <p>If the app's data use changes, I'll update this page and the effective date above. Significant changes
+        will also be noted in the App Store release notes.</p>
+
+      <h2>Contact</h2>
+      <p>Questions about privacy? Email <a href="mailto:support@soumyamahunt.com">support@soumyamahunt.com</a>.</p>
+    </article>
+    <footer><a href="/">soumyamahunt.com</a></footer>
+  </main>
+</body>
+
+</html>

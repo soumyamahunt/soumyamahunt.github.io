@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hush Support</title>
+  <meta name="description" content="Help and support for Hush, the ad and tracker blocker for Safari and every app on iPhone and iPad.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="canonical" href="https://soumyamahunt.com/hush/">
+  <link rel="icon" type="image/png" href="icon.png">
+  <link rel="apple-touch-icon" href="icon.png">
+  <style>
+    :root {
+      --bg: #f6f6f8;
+      --surface: #ffffff;
+      --text: #1c1c1e;
+      --muted: #5b5b61;
+      --border: #e4e4e7;
+      --accent: #2e47c7;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111113;
+        --surface: #1b1b1f;
+        --text: #ececef;
+        --muted: #a1a1a8;
+        --border: #2c2c31;
+        --accent: #8fa8ff;
+      }
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    main { max-width: 760px; margin: 0 auto; padding: 48px 16px 64px; }
+
+    article {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 32px 28px;
+    }
+
+    .app { display: flex; align-items: center; gap: 16px; margin: 0 0 20px; }
+    .app img { width: 88px; height: 88px; flex: none; border-radius: 22.5%; box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18); }
+    h1 { font-size: 30px; line-height: 1.2; margin: 0 0 4px; }
+    h2 { font-size: 21px; margin: 32px 0 8px; }
+    h3 { font-size: 17px; margin: 20px 0 4px; }
+    p, li { margin: 8px 0; }
+    ul { padding-left: 22px; }
+    a { color: var(--accent); text-underline-offset: 2px; }
+    .meta { color: var(--muted); margin: 0; }
+    .contact {
+      border-left: 4px solid var(--accent);
+      padding: 4px 16px;
+      margin: 24px 0;
+    }
+    footer { color: var(--muted); text-align: center; font-size: 15px; margin-top: 24px; }
+
+    @media (max-width: 520px) {
+      article { padding: 24px 18px; }
+      h1 { font-size: 26px; }
+      .app img { width: 68px; height: 68px; }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <article>
+      <header class="app">
+        <img src="icon.png" alt="Hush app icon" width="88" height="88">
+        <div>
+          <h1>Hush</h1>
+          <p class="meta">Block ads and trackers in Safari and every app, for iPhone and iPad.</p>
+        </div>
+      </header>
+
+      <p>Hush blocks ads, trackers and known malware, with lists built from the ones uBlock Origin uses by default. It works three ways,
+        and you can use any of them:</p>
+      <ul>
+        <li><strong>Safari</strong> (free): Safari extensions that block ads and trackers and hide the empty boxes
+          ads leave behind.</li>
+        <li><strong>VPN mode</strong> (free): blocks ads and trackers in every app by answering their lookups on
+          your device. It can also connect through your own WireGuard VPN provider.</li>
+        <li><strong>Hush Everywhere</strong> (subscription): blocks in every app using iOS's built-in URL
+          filtering, so it works alongside any VPN, including a work one.</li>
+      </ul>
+      <p>Your browsing stays private in all three. See the <a href="privacy/">Privacy Policy</a> for exactly what
+        happens to your data.</p>
+
+      <div class="contact">
+        <p><strong>Need help?</strong> Email <a href="mailto:support@soumyamahunt.com">support@soumyamahunt.com</a>.
+          Please include your device model, iOS version, Hush version (shown in Settings) and which mode you use if
+          something isn't working.</p>
+      </div>
+
+      <h2>Frequently asked questions</h2>
+
+      <h3>How do I turn on Safari blocking?</h3>
+      <p>Open the <em>Protection</em> tab and tap the switch for each Safari blocker, which takes you to its page
+        in Settings. You can also go to Settings › Apps › Safari › Extensions and turn on <em>Hush Ads</em>,
+        <em>Hush Privacy</em> and <em>Hush Cosmetic</em>. Once a blocker is on, its switch in Hush pauses and
+        resumes it.</p>
+
+      <h3>Which mode should I use?</h3>
+      <p>If you only browse in Safari, the Safari blockers are enough. To block ads in other apps too, use VPN
+        mode, unless you already use a VPN you can't replace (for example one from work). iOS runs one VPN at a
+        time, so in that case Hush Everywhere is the one that works alongside it.</p>
+
+      <h3>Can I use VPN mode with my own VPN?</h3>
+      <p>Yes, if your provider offers WireGuard configuration files (Mullvad, Proton VPN, IVPN, AirVPN and
+        Windscribe do, for example). Import the file in the <em>VPN</em> tab and Hush connects to your provider,
+        blocking ads and trackers before they enter the tunnel. With a provider you can also refuse direct
+        connections to addresses that were never looked up, which catches apps that skip DNS, though it can break
+        some calls and games.</p>
+
+      <h3>Why does iOS ask to add a VPN or a filter?</h3>
+      <p>VPN mode and Hush Everywhere are network settings that only you can allow. iOS asks the first time you
+        switch either on, and blocking starts once you allow it.</p>
+
+      <h3>How do I block a site that isn't on the list?</h3>
+      <p>In the <em>Blocklist</em> tab, add a host such as <em>ads.example.com</em>, a full web address, or paste a
+        whole hosts file. Hosts you add block straight away in Safari and VPN mode. Hush Everywhere gets its answer
+        from its filtering service, so there a host blocks once the service's list includes it too; <em>Check
+        status</em> shows which do.</p>
+
+      <h3>A page or app broke. What can I do?</h3>
+      <p>In Safari, pause the blocker that's causing it from the <em>Protection</em> tab. For Hush Everywhere,
+        turning off <em>Settings › Block when unsure</em> lets requests through when the filtering service can't be
+        reached. If a site on the list shouldn't be, email me and I'll look at it.</p>
+
+      <h3>Why do I still see ads in YouTube videos?</h3>
+      <p>Video ads in YouTube come from the same addresses as the video itself, so no URL or DNS blocker can stop
+        them without stopping playback too. Hush blocks the parts that are separate, such as banner slots and ad
+        measurement.</p>
+
+      <h3>How do I manage or cancel Hush Everywhere?</h3>
+      <p>In Hush, go to <em>Settings › Manage subscription</em>, or use Settings › your name › Subscriptions on your
+        device. To use it on a new device, tap <em>Restore purchases</em> while signed in with the same Apple
+        Account. Safari blocking and VPN mode stay free either way.</p>
+
+      <h2>Support</h2>
+      <p>Hush has no ads and no tracking. If it's useful to you, you can support my apps on
+        <a href="https://www.patreon.com/SoumyaMahunt" rel="noopener noreferrer">Patreon</a>. It helps cover the
+        developer account and keeps them maintained.</p>
+
+      <h2>Legal</h2>
+      <p><a href="privacy/">Privacy Policy</a> · <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener noreferrer">Terms of Use (Apple standard EULA)</a></p>
+    </article>
+    <footer><a href="/">soumyamahunt.com</a></footer>
+  </main>
+</body>
+
+</html>
