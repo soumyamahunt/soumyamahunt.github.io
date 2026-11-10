@@ -100,19 +100,18 @@
         <img src="../icon.png" alt="Hush app icon" width="72" height="72">
         <div>
           <h1>Privacy Policy</h1>
-          <p class="meta">Hush for iPhone and iPad · Effective 21 October 2026</p>
+          <p class="meta">Hush for iPhone and iPad · Effective 10 November 2026</p>
         </div>
       </header>
 
       <p>Hush is an ad and tracker blocker made by Soumya Ranjan Mahunt ("I", "me"). This policy explains what data
-        the app uses, where it goes, and the choices you have. Hush can block in three ways: Safari blocking, VPN
-        mode and Hush Everywhere. Each handles your browsing differently, so each is described below.</p>
+        the app uses, where it goes, and the choices you have. Hush can block in two ways: Safari blocking and
+        Hush Everywhere. Each handles your browsing differently, so each is described below.</p>
 
       <div class="summary">
         <p><strong>In short:</strong> no account or sign-up, no analytics, no ads and no tracking. I don't collect
-          any personal data, and I can't see which sites or apps you use. Safari blocking and VPN mode decide
-          everything on your device. VPN mode sends lookups it doesn't block to Cloudflare's public DNS resolver, or
-          to your own VPN provider if you add one. Hush Everywhere asks my filtering service about some addresses,
+          any personal data, and I can't see which sites or apps you use. Safari blocking decides everything on
+          your device. Hush Everywhere asks my filtering service about some addresses,
           but in an encrypted form the service can't read, so it never learns which address was asked about.</p>
       </div>
 
@@ -122,35 +121,16 @@
         <li>the hosts you add to your own blocklist;</li>
         <li>your settings, such as which Safari blockers are paused, whether to block when unsure, and how often
           the blocklist is refreshed;</li>
-        <li>for VPN mode, the WireGuard configuration you import from your VPN provider (including its keys), saved
-          in your device's VPN settings, and running counts of lookups checked and blocked;</li>
         <li>a short log of the filter extension's own status (such as when it loaded the blocklist), used to show
           errors in the app; and</li>
         <li>for Hush Everywhere, a cache of recent answers that iOS keeps itself.</li>
       </ul>
-      <p>None of this is sent to me. It is deleted when you delete the app, and you can remove your own hosts, your
-        VPN configuration or Hush Everywhere from inside the app at any time.</p>
+      <p>None of this is sent to me. It is deleted when you delete the app, and you can remove your own hosts or
+        Hush Everywhere from inside the app at any time.</p>
 
       <h2>Safari blocking</h2>
       <p>Hush's Safari extensions give Safari a list of rules, and Safari applies them itself. The extensions are
         never told which pages you visit, and nothing about your browsing reaches Hush or me.</p>
-
-      <h2>VPN mode</h2>
-      <p>VPN mode uses a VPN configuration on your device to check each DNS lookup (the step where an app turns a
-        name like <em>example.com</em> into an address). Lookups for ads and trackers are answered on your device
-        and never leave it. Hush doesn't log the names you look up.</p>
-      <ul>
-        <li><strong>On its own</strong>, only lookups pass through Hush. The ones it doesn't block are forwarded to
-          Cloudflare's public DNS resolver (1.1.1.1). These lookups are not encrypted, so Cloudflare, and networks
-          along the way, can see the names looked up and your IP address. Cloudflare handles them under its
-          <a href="https://developers.cloudflare.com/1.1.1.1/privacy/public-dns-resolver/" rel="noopener noreferrer">resolver
-          privacy policy</a>. All your other traffic goes out as usual, not through Hush.</li>
-        <li><strong>With your own VPN provider</strong>, Hush connects to the provider you chose using the
-          configuration you imported, and your traffic and lookups it doesn't block go to that provider, under its
-          own privacy policy. If that configuration names no DNS server, Hush uses Cloudflare's, through your
-          VPN.</li>
-      </ul>
-      <p>No server of mine is involved in VPN mode.</p>
 
       <h2>Hush Everywhere</h2>
       <p>Hush Everywhere uses iOS's built-in URL filter. iOS itself does the checking; the Hush app and its
@@ -200,8 +180,7 @@
       <h2>Your rights</h2>
       <p>Depending on where you live (for example under the GDPR in Europe or privacy laws in some US states), you
         may have rights to access, delete, or object to the use of your personal data. Because I don't hold personal
-        data about you, most of these are covered by deleting the app. For data handled by Apple, Cloudflare or your
-        VPN provider, use their controls, or contact me and I'll point you to the right place.</p>
+        data about you, most of these are covered by deleting the app. For data handled by Apple or Cloudflare, use their controls, or contact me and I'll point you to the right place.</p>
 
       <h2>Changes to this policy</h2>
       <p>If the app's data use changes, I'll update this page and the effective date above. Significant changes

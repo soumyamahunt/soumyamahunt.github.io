@@ -85,16 +85,14 @@
       </header>
 
       <p>Hush blocks ads, trackers and known malware, with lists built from the ones uBlock Origin uses by default. It costs
-        $2.99 on the App Store and works three ways, and you can use any of them:</p>
+        $2.99 on the App Store and works two ways, and you can use either or both:</p>
       <ul>
         <li><strong>Safari</strong> (included): Safari extensions that block ads and trackers and hide the empty boxes
           ads leave behind.</li>
-        <li><strong>VPN mode</strong> (included): blocks ads and trackers in every app by answering their lookups on
-          your device. It can also connect through your own WireGuard VPN provider.</li>
         <li><strong>Hush Everywhere</strong> (optional subscription): blocks in every app using iOS's built-in URL
           filtering, so it works alongside any VPN, including a work one.</li>
       </ul>
-      <p>Your browsing stays private in all three. See the <a href="privacy/">Privacy Policy</a> for exactly what
+      <p>Your browsing stays private in both. See the <a href="privacy/">Privacy Policy</a> for exactly what
         happens to your data.</p>
 
       <div class="contact">
@@ -112,24 +110,21 @@
         resumes it.</p>
 
       <h3>Which mode should I use?</h3>
-      <p>If you only browse in Safari, the Safari blockers are enough. To block ads in other apps too, use VPN
-        mode, unless you already use a VPN you can't replace (for example one from work). iOS runs one VPN at a
-        time, so in that case Hush Everywhere is the one that works alongside it.</p>
+      <p>If you only browse in Safari, the Safari blockers are enough. To block ads in other apps too, add Hush
+        Everywhere. It works alongside any VPN you already use, including one from work.</p>
 
-      <h3>Can I use VPN mode with my own VPN?</h3>
-      <p>Yes, if your provider offers WireGuard configuration files (Mullvad, Proton VPN, IVPN, AirVPN and
-        Windscribe do, for example). Import the file in the <em>VPN</em> tab and Hush connects to your provider,
-        blocking ads and trackers before they enter the tunnel. With a provider you can also refuse direct
-        connections to addresses that were never looked up, which catches apps that skip DNS, though it can break
-        some calls and games.</p>
+      <h3>Why does iOS ask to add a filter?</h3>
+      <p>Hush Everywhere is a network setting that only you can allow. iOS asks the first time you switch it on,
+        and blocking starts once you allow it. You'll find it under Settings › General › VPN, DNS &amp; Device
+        Management, though it isn't a VPN and doesn't route your traffic.</p>
 
-      <h3>Why does iOS ask to add a VPN or a filter?</h3>
-      <p>VPN mode and Hush Everywhere are network settings that only you can allow. iOS asks the first time you
-        switch either on, and blocking starts once you allow it.</p>
+      <h3>What happened to VPN mode?</h3>
+      <p>Apple only allows VPN apps from developers registered as a company, so Hush 1.0 ships without VPN mode.
+        Hush Everywhere blocks in every app instead.</p>
 
       <h3>How do I block a site that isn't on the list?</h3>
       <p>In the <em>Blocklist</em> tab, add a host such as <em>ads.example.com</em>, a full web address, or paste a
-        whole hosts file. Hosts you add block straight away in Safari and VPN mode. Hush Everywhere gets its answer
+        whole hosts file. Hosts you add block straight away in Safari. Hush Everywhere gets its answer
         from its filtering service, so there a host blocks once the service's list includes it too; <em>Check
         status</em> shows which do.</p>
 
@@ -146,7 +141,7 @@
       <h3>How do I manage or cancel Hush Everywhere?</h3>
       <p>In Hush, go to <em>Settings › Manage subscription</em>, or use Settings › your name › Subscriptions on your
         device. To use it on a new device, tap <em>Restore purchases</em> while signed in with the same Apple
-        Account. Safari blocking and VPN mode come with the app and keep working either way.</p>
+        Account. Safari blocking comes with the app and keeps working either way.</p>
 
       <h2>Support</h2>
       <p>Hush has no ads and no tracking. If it's useful to you, you can support my apps on
