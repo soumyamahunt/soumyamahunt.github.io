@@ -127,6 +127,8 @@
     @media (prefers-reduced-motion: reduce) {
       .hero video { transform: none; filter: none; }
     }
+    .store { display: inline-block; margin: 0 0 20px; }
+    .store img { display: block; height: 48px; width: auto; }
   </style>
 </head>
 
@@ -152,6 +154,13 @@
           <p class="meta">Lagori (Seven Stones) as a bouncy 3D party game for iPhone and iPad.</p>
         </div>
       </header>
+
+      <a class="store" href="https://apps.apple.com/app/id6818998251">
+        <picture>
+          <source srcset="app-store-badge-white.svg" media="(prefers-color-scheme: dark)">
+          <img src="app-store-badge.svg" alt="Download on the App Store" width="144" height="48">
+        </picture>
+      </a>
 
       <p>Knock down a stack of seven stones, then race to rebuild it while the other team tries to bonk you with
         the ball. Play against bots, with friends nearby, or online with Game Center.</p>
